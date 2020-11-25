@@ -20,7 +20,7 @@ package it.multicoredev;
  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-public class Main {
+public class Lezione1 {
 
     public static void main(String[] args) {
         /*
@@ -29,7 +29,7 @@ public class Main {
         int     32 bit -2^31 -> 2^31 -1
         float   32 bit (decimale)
         double  64 bit (decimale)
-        long    64 bint -2^63 -> 2?63 -1
+        long    64 bit -2^63 -> 2^63 -1
         boolean true / false
         */
 
