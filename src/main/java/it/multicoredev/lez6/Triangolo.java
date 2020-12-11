@@ -1,4 +1,4 @@
-package it.multicoredev;
+package it.multicoredev.lez6;
 
 /**
  * Copyright © 2020 by Lorenzo Magni
@@ -20,20 +20,33 @@ package it.multicoredev;
  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-public class Lezione1 {
+public class Triangolo implements Poligono {
+    private static final int LATI = 3;
+    private double l1 = 0;
+    private double l2 = 0;
+    private double l3 = 0;
+    private double h = 0;
 
-    public static void main(String[] args) {
-        /*
-        byte    8 bit -128 -> 127
-        short   16 bit -32768 -> 32767
-        int     32 bit -2^31 -> 2^31 -1
-        float   32 bit (decimale)
-        double  64 bit (decimale)
-        long    64 bit -2^63 -> 2^63 -1
-        boolean true / false
-        */
+    public Triangolo(double l1, double l2, double l3, double h) {
+        this.l1 = l1;
+        this.l2 = l2;
+        this.l3 = l3;
+        this.h = h;
+    }
 
-        //sout
-        System.out.println("Hello World!");
+    public Triangolo() {
+    }
+
+    @Override
+    public double perimetro() {
+        return l1 + l2 + l3;
+    }
+
+    public double area() {
+        return (l1 * h) / 2;
+    }
+
+    public static int getLati() {
+        return LATI;
     }
 }

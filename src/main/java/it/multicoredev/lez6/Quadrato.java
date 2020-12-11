@@ -1,4 +1,4 @@
-package it.multicoredev;
+package it.multicoredev.lez6;
 
 /**
  * Copyright © 2020 by Lorenzo Magni
@@ -20,20 +20,17 @@ package it.multicoredev;
  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-public class Lezione1 {
+public class Quadrato extends Rettangolo {
 
-    public static void main(String[] args) {
-        /*
-        byte    8 bit -128 -> 127
-        short   16 bit -32768 -> 32767
-        int     32 bit -2^31 -> 2^31 -1
-        float   32 bit (decimale)
-        double  64 bit (decimale)
-        long    64 bit -2^63 -> 2^63 -1
-        boolean true / false
-        */
+    public Quadrato(double l) {
+        super(l, l);
+    }
 
-        //sout
-        System.out.println("Hello World!");
+    public double perimetro() {
+        return l1 * 4;
+    }
+
+    public double area() {
+        return l1 * l1;
     }
 }
